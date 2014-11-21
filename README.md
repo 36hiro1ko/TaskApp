@@ -6,15 +6,16 @@ cd TaskApp
 ②rails g scaffold Task body:string done:boolean
 
 ③Gemfileを編集
-
-以下を追加
+```ruby
+#以下を追加
 gem 'bootstrap-sass'
 gem 'angularjs-rails'
 gem 'angular-ui-bootstrap-rails'
 以下をコメント
 #gem 'turbolinks'
 以下をコメントアウト
-gem 'therubyracer',  platforms: :ruby
+#gem 'therubyracer',  platforms: :ruby
+```
 
 ④bundle intall
 
@@ -33,7 +34,7 @@ gem 'therubyracer',  platforms: :ruby
 ⑥TaskApp/app/assets/stylesheetsの下に「costom.css.scss」ファイルを新規作成
 以下を追加
 ```ruby
-@@import "bootstrap";
+@import "bootstrap";
 ```
 
 ⑦TaskApp/config/routes.rbを編集。
