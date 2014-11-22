@@ -6,6 +6,7 @@ gem 'rails', '4.1.7'
 gem 'bootstrap-sass'
 gem 'angularjs-rails'
 gem 'angular-ui-bootstrap-rails'
+gem 'ngmin-rails', '~> 0.4.0'
 
 # Use sqlite3 as the database for Active Record
 group :development do
