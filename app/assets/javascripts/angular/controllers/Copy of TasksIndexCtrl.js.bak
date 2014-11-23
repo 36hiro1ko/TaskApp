@@ -1,4 +1,4 @@
-app.controller("TasksIndexCtrl", ['$scope','$http', '$resource',function($scope,$http,$resource) {
+app.controller("TasksIndexCtrl", function($scope,$resource) {
   var rtn = $resource('/tasks.json');
   $scope.tasks = rtn.query();
   
@@ -22,4 +22,4 @@ app.controller("TasksIndexCtrl", ['$scope','$http', '$resource',function($scope,
         });
     }
   
-}]);
+});
